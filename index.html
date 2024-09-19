@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <h1>Ahorcado: Animales</h1>
+    <div id="vidas">Vidas: 6</div>
+    <div id="tiempo">Tiempo: 0 segundos</div>
+    <div id="palabra"></div>
+    <input type="text" id="letra" maxlength="1">
+    <button id="adivinar">Adivinar</button>
+    <div id="letrasUsadas"></div>
+
+    <div id="guardarPuntaje" style="display: none;">
+        <h2>¡Juego terminado!</h2>
+        <p>Tu puntuación: <span id="puntuacion"></span></p>
+        <input type="text" id="nombreJugador" placeholder="Tu nombre" maxlength="3">
+        <button id="guardar">Guardar puntuación</button>
+    </div>
+
+    <h2>Tabla de Posiciones</h2>
+    <table id="tablaPosiciones">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Puntos</th>
+                <th>Tiempo</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html> 
